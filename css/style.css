@@ -1,0 +1,171 @@
+/*General*/
+
+body {
+	/*font-family: 'Fjalla One', sans-serif;*/
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: inherit;
+}
+
+/*Navbar*/
+
+nav {
+	background-color: #333;
+	color: white;
+}
+
+#brand {
+	font-size: 1.4em;
+}
+
+nav ul {
+	margin-bottom: 0;
+	text-align: right;
+}
+
+nav li {
+}
+
+nav li, #brand {
+	display: inline-block;
+	padding: 20px 15px;
+	margin: 0px;
+}
+
+.active {
+	background-color: #e84c3d;
+}
+
+/*Banner*/
+
+#banner {
+	position: relative;
+	height: 555px;
+	color: white;
+	background: url("../img/banner.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#banner .container {
+	padding-top: 315px;
+}
+
+#banner img:not(:first-child) {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#banner h3 {
+	margin-bottom: 0;
+}
+
+#banner hr {
+	display: inline-block;
+	border: 2px white solid;
+	margin-top: 0;
+	margin-bottom: .5rem;
+	width: 220px;
+}
+
+#banner span {
+	color: #e84c3d;
+}
+
+/*About*/
+
+#about {
+	background-color: #e7e7e7;
+	padding: 5% 0;
+}
+
+#about .fa:not(.fa-circle) {
+	font-size: 2em;
+	color: white;
+	border-radius: 50%;
+}
+
+	/*Why this code Comment: Different height icons require custom margin
+	clas="fa-sw" would not have solved inconsistencies as
+	the problem resides on the height of the icons, custom
+	pngs would add to http requests and/or sprite size,
+	This solution is the most efficient and consistent across viewports
+	*/
+
+.fa-rocket{
+	margin-left: 13px;
+	margin-top: 20px;
+}
+
+.fa-shield{
+	margin-left: 15px;
+	margin-top: 23px;
+}
+
+.fa-fire-extinguisher{
+	margin-left: 17px;
+	margin-top: 20px;
+}
+
+.fa-circle {
+	color: #e84c3d;
+	font-size: 4em;
+}
+
+#about .column div {
+	display: inline-block;
+}
+
+#about h4, #about p {
+	margin-bottom: 10px;
+}
+
+/*Services*/
+
+#services img {
+	height: 100%;
+	width: auto;
+}
+
+#services .five {
+	text-align: right;
+}
+
+.pill-btn {
+	background-color: #e84c3d;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 50px;
+}
+
+/*Subscribe To Portfolio*/
+
+#portfolio {
+	color: white;
+}
+
+#portfolio .container {
+	background-color: #e84c3d;
+	border-radius: 15px;
+}
+
+#portfolio span {
+	margin-top: 50px;
+}
+
+#portfolio .fa-circle {
+	color: black;
+}
+
+#portfolio .fa-user {
+	color: white;
+	font-size: 2em;
+	margin-left: 15px;
+	margin-top: 20px;
+}
