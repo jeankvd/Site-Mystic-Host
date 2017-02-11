@@ -7,101 +7,79 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
 	<!--Font-->
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto" rel="stylesheet">
 	<script src="https://use.fontawesome.com/abebc5126b.js"></script>
 	<!--Custom css-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
 <!--Navbar-->
-<div>
-	<nav>
-		<div class="container">
-			<div class="row">
-				<div class="three columns">
-					<span id="brand">Mystic Host</span>
-				</div>
-				<div class="nine columns">
-					<ul>
-						<a href=""><li class="active">Home</li></a>
-						<a href=""><li>About</li></a>
-						<a href=""><li>Services</li></a>
-						<a href=""><li>Portfolio</li></a>
-						<a href=""><li>Contact</li></a>
-					</ul>
-				</div>
+<nav>
+	<div class="container">
+		<div class="row">
+			<div class="three columns">
+				<span id="brand">Mystic Host</span>
+			</div>
+			<div class="nine columns">
+				<ul>
+					<a href=""><li class="active">Home</li></a>
+					<a href=""><li>About</li></a>
+					<a href=""><li>Services</li></a>
+					<a href=""><li>Portfolio</li></a>
+					<a href=""><li>Contact</li></a>
+				</ul>
 			</div>
 		</div>
-	</nav>
-</div>
+	</div>
+</nav>
 <!--End Navbar-->
 
 <!--Banner-->
-<div id="banner">
+<section id="banner">
 	<div class="container">
-		<div>
-			<img src="img/halfcircle.png">
-			<img src="img/halfcircle.png">
-		</div>
-		<div>
-			<h3>Uncage &nbsp<hr></h3>
-		</div>
-		<div>
-			<h3>Host Without Bounds</h3>
-		</div>
-		<div>
-			<span>MysticHosts.com</span>
-		</div>
+		<img src="img/halfcircle.png">
+		<img src="img/halfcircle.png">
+		<h3>Uncage &nbsp<hr></h3>
+		<h3>Host Without Bounds</h3>
+		<span>MysticHosts.com</span>
 	</div>
-</div>
+</section>
 <!--End Banner-->
 
 <!--About-->
-<div id="about">
-	<div class="container">
-		<div class="row">
-			<div class="service">
-				<div class="one column">
-					<span class="fa-stack fa-lg">
-  						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-rocket fa-stack-1x" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="three columns">
-					<h4>Fast Servers</h4>
-					<p>We offer one the fastest private servers of the whole market giving your users rocket-fast acces to your website.</p>
-				</div>
-			</div>
-			<div class="service">
-				<div class="one column">
-					<span class="fa-stack fa-lg">
-  						<i class="fa fa-circle fa-stack-2x "></i>
-						<i class="fa fa-shield fa-stack-1x" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="three columns">
-					<h4>Security</h4>
-					<p>Your data has never been safer than with us, we provide encryption and 2 step verification to our users.</p>
-				</div>
-			</div>
-			<div class="service">
-				<div class="one column">
-					<span class="fa-stack fa-lg">
-  						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-fire-extinguisher fa-stack-1x" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="three columns">
-					<h4>Maintenaince</h4>
-					<p>We always have engineers on site so they can solve any problem that may arise. We guarantee 99.9% Uptime.</p>
-				</div>
-			</div>
+<section id="about">
+	<div class="container"> <!--removed .row div--> <!--negative margin .fa stacks to have a cleaner structure-->
+		<div class="one-third column">
+			<span class="fa-stack fa-3x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rocket fa-stack-1x" aria-hidden="true"></i>
+			</span>
+			<h4>Fast Servers</h4>
+			<p>We offer one the fastest private servers of the whole market giving your users rocket-fast acces to your website.</p>
+		</div>
+		<div class="one-third column">
+			<span class="fa-stack fa-3x">
+				<i class="fa fa-circle fa-stack-2x "></i>
+				<i class="fa fa-shield fa-stack-1x" aria-hidden="true"></i>
+			</span>
+			<h4>Security</h4>
+			<p>Your data has never been safer than with us, we provide encryption and 2 step verification to our users.</p>
+		</div>
+		<div class="one-third column">
+			<span class="fa-stack fa-3x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-fire-extinguisher fa-stack-1x" aria-hidden="true"></i>
+			</span>
+			<h4>Maintenaince</h4>
+			<p>We always have engineers on site so they can solve any problem that may arise. We guarantee 99.9% Uptime.</p>
 		</div>
 	</div>
-</div>
+</section>
 <!--End About-->
 
 <!--Services-->
-<div class="container" id="services">
+<section class="container" id="services">
 	<div class="row">
 		<div class="seven columns">
 			<h4>We provide the best services that you could imagine, no one like us</h4>
@@ -121,34 +99,137 @@
 			<img src="img/bird.png">
 		</div>
 	</div>
-</div>
+</section>
 <!--End Services-->
 
 <!--Subscribe to Portfolio-->
-<div id="portfolio">
-	<div class="container">
-		<div class="row">
-			<div class="one-half column">
+<section id="portfolio" class="container">
+	<div class="row">
+		<div class="one-half column" id="sign-up-text">
+			<span class="fa-stack fa-3x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
+			</span>
+			<h5>You wont belive what is in store</h5>
+			<p>Lorem Ipusm Dolor Gatum etso Apordious Lorem Ipsum Catum Bacon Strotum Portious</p>
+		</div>
+		<div class="one-half column">
+			<h5>Valar Morghulis, Valar Doaheris</h5>
+			<input type="email" name="email" value="email here">
+			<input type="submit" name="submit" value="Subscribe">
+		</div>
+	</div>
+</section>
+<!--END Subscribe to Portfolio-->
+
+<!--Contact-->
+<section id="contact" class="container">
+	<div class="row">
+		<div class="one-third column" id="testimonials">
+			<h5>Testimonials</h5>
+			<div class="contact-section row">
 				<div class="three columns">
-					<span class="fa-stack fa-lg">
-  						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
-					</span>
+					<img src="img/face.png">
 				</div>
 				<div class="nine columns">
-					<h5>You wont belive what is in store</h5>
-					<p>Lorem Ipusm Dolor Gatum etso Apordious Lorem Ipsum Catum Bacon Strotum Portious</p>
+					<p>This was one of the best decisions that I could have ever made</p>
+					<a href="">more=></a>
 				</div>
 			</div>
-			<div class="one-half column">
-				<h5>Valar Morghulis, Valar Doaheris</h5>
-				<input type="email" name="email" value="email here">
-				<input type="submit" name="submit" value="Subscribe">
+			<div class="contact-section row">
+				<div class="three columns">
+					<img src="img/face.png">
+				</div>
+				<div class="nine columns">
+					<p>This was one of the best decisions that I could have ever made</p>
+					<a href="">more=></a>
+				</div>
+			</div>
+			<div class="contact-section row">
+				<div class="three columns">
+					<img src="img/face.png">
+				</div>
+				<div class="nine columns">
+					<p>This was one of the best decisions that I could have ever made</p>
+					<a href="">more=></a>
+				</div>
+			</div>
+		</div>
+		<div class="one-third column" id="form">
+			<h5>Ask for a quote</h5>
+			<div id="quote-form">
+				<p>Here you can ask for a quote go ahead, dont be shy</p>
+				<input type="name" name="name">
+				<input type="email" name="email">
+				<textarea></textarea>
+				<input type="submit" name="send" value="send">
+			</div>
+		</div>
+		<div class="one-third column" id="contact-us">
+			<h5>Contact Us</h5>
+			<div class="contact-section row">
+				<div class="two columns">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ten columns">
+					<h6>Adress</h6>
+					<p>Orlando, Florida 34116 Lee Lan Dr</p>
+				</div>
+			</div>
+			<div class="contact-section row">
+				<div class="two columns">
+					<i class="fa fa-phone"></i>
+				</div>
+				<div class="ten columns">
+					<h6>Phone</h6>
+					<p>239/200/2373</p>
+				</div>
+			</div>
+			<div class="contact-section row">
+				<div class="two columns">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="ten columns">
+					<h6>Email</h6>
+					<p>djjean85@gmail.com</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!--END Subscribe to Portfolio-->
+</section>
+
+<!--End Contact-->
+
+<!--Footer-->
+<footer>
+	<div class="container">
+		<div class="nine columns">
+			<ul>
+				<a href=""><li>Home</li></a>
+				<a href=""><li>About</li></a>
+				<a href=""><li>Services</li></a>
+				<a href=""><li>Portfolio</li></a>
+				<a href=""><li>Contact</li></a>
+			</ul>
+			<p>Website Developed by Jean Villalobos&copy</p>
+		</div>
+		<div class="three columns social">
+		<span class="fa-stack fa-lg">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+		</span>
+		<span class="fa-stack fa-lg">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+		</span>
+		<span class="fa-stack fa-lg">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+		</span>
+		</div>
+	</div>
+</footer>
+<!--End Footer-->
 
 <!--Scripts-->
 
