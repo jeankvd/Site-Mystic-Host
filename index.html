@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Mystic Host</title>
 	<!--Skeleton-->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
 	<!--Font-->
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script src="https://use.fontawesome.com/abebc5126b.js"></script>
+	<!--Jquery-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<!--Custom css-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -23,11 +25,11 @@
 			</div>
 			<div class="nine columns">
 				<ul>
-					<a href=""><li class="active">Home</li></a>
-					<a href=""><li>About</li></a>
-					<a href=""><li>Services</li></a>
-					<a href=""><li>Portfolio</li></a>
-					<a href=""><li>Contact</li></a>
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,9 +40,9 @@
 <!--Banner-->
 <section id="banner">
 	<div class="container">
-		<img src="img/halfcircle.png">
-		<img src="img/halfcircle.png">
-		<h3>Uncage &nbsp<hr></h3>
+		<img src="img/halfcircle.png" alt="logo">
+		<img src="img/halfcircle.png" alt="logo">
+		<h3>Uncage&nbsp;&nbsp;<hr></h3>
 		<h3>Host Without Bounds</h3>
 		<span>MysticHosts.com</span>
 	</div>
@@ -56,7 +58,7 @@
 				<i class="fa fa-rocket fa-stack-1x" aria-hidden="true"></i>
 			</span>
 			<h4>Fast Servers</h4>
-			<p>We offer one the fastest private servers of the whole market giving your users rocket-fast acces to your website.</p>
+			<p>We offer one the fastest private servers of the whole market giving your users rocket-fast acces to your website. <a href=""> => more </a></p>
 		</div>
 		<div class="one-third column">
 			<span class="fa-stack fa-3x">
@@ -64,7 +66,7 @@
 				<i class="fa fa-shield fa-stack-1x" aria-hidden="true"></i>
 			</span>
 			<h4>Security</h4>
-			<p>Your data has never been safer than with us, we provide encryption and 2 step verification to our users.</p>
+			<p>Your data has never been safer than with us, we provide encryption and 2 step verification to our users. <a href=""> => more </a></p>
 		</div>
 		<div class="one-third column">
 			<span class="fa-stack fa-3x">
@@ -72,7 +74,7 @@
 				<i class="fa fa-fire-extinguisher fa-stack-1x" aria-hidden="true"></i>
 			</span>
 			<h4>Maintenaince</h4>
-			<p>We always have engineers on site so they can solve any problem that may arise. We guarantee 99.9% Uptime.</p>
+			<p>We always have engineers on site so they can solve any problem that may arise. We guarantee 99.9% Uptime. <a href=""> => more </a></p>
 		</div>
 	</div>
 </section>
@@ -80,8 +82,8 @@
 
 <!--Services-->
 <section class="container" id="services">
-	<div class="row">
-		<div class="seven columns">
+	<div class="row" >
+		<div class="seven columns" id="services-text">
 			<h4>We provide the best services that you could imagine, no one like us</h4>
 			<h5>You won't belive what's in store</h5>
 			<div class="one-half column">
@@ -91,12 +93,12 @@
 			</div>
 			<div class="one-half column">
 				<h6>Web Hosting</h6>
-				<p>In today's world you not only need a server but the server, your website should load as fast as it possibly can, we provide high speed servers.</p>
+				<p>In today's world you not only need a server but the server, your website should load as fast as it possibly can, we provide high speed private servers for maximum speed.</p>
 				<a href="#" class="pill-btn">More</a>
 			</div>
 		</div>
-		<div class="five columns">
-			<img src="img/bird.png">
+		<div class="five columns" id="services-photo">
+			<img src="img/bird.png" alt="bird image">
 		</div>
 	</div>
 </section>
@@ -110,13 +112,13 @@
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
 			</span>
-			<h5>You wont belive what is in store</h5>
-			<p>Lorem Ipusm Dolor Gatum etso Apordious Lorem Ipsum Catum Bacon Strotum Portious</p>
+			<h5>Subscribe to Our Portfolio Newsletter</h5>
+			<p>Every week we send subscribers our most recent work along with coupons for your next purchase!</p>
 		</div>
 		<div class="one-half column">
-			<h5>Valar Morghulis, Valar Doaheris</h5>
-			<input type="email" name="email" value="email here">
-			<input type="submit" name="submit" value="Subscribe">
+			<h5>Don't miss out. Subscribe Now!</h5>
+			<input type="email" name="email" placeholder="email here" >
+			<input type="submit" name="submit" value="Subscribe" >
 		</div>
 	</div>
 </section>
@@ -129,29 +131,29 @@
 			<h5>Testimonials</h5>
 			<div class="contact-section row">
 				<div class="three columns">
-					<img src="img/face.png">
+					<img src="img/face.png" alt="testimonial image">
 				</div>
 				<div class="nine columns">
 					<p>This was one of the best decisions that I could have ever made</p>
-					<a href="">more=></a>
+					<a href="">more =></a>
 				</div>
 			</div>
 			<div class="contact-section row">
 				<div class="three columns">
-					<img src="img/face.png">
+					<img src="img/cage.png" alt="testimonial image">
 				</div>
 				<div class="nine columns">
-					<p>This was one of the best decisions that I could have ever made</p>
-					<a href="">more=></a>
+					<p>My business has grown a lot since changing to Mystic Host</p>
+					<a href="">more =></a>
 				</div>
 			</div>
 			<div class="contact-section row">
 				<div class="three columns">
-					<img src="img/face.png">
+					<img src="img/small-bird.png" alt="testimonial image">
 				</div>
 				<div class="nine columns">
-					<p>This was one of the best decisions that I could have ever made</p>
-					<a href="">more=></a>
+					<p>The friendliest customer service I have seen in a long time</p>
+					<a href="">more =></a>
 				</div>
 			</div>
 		</div>
@@ -159,9 +161,9 @@
 			<h5>Ask for a quote</h5>
 			<div id="quote-form">
 				<p>Here you can ask for a quote go ahead, dont be shy</p>
-				<input type="name" name="name">
-				<input type="email" name="email">
-				<textarea></textarea>
+				<input type="name" name="name" placeholder="name...">
+				<input type="email" name="email" placeholder="email...">
+				<textarea placeholder="Your query..."></textarea>
 				<input type="submit" name="send" value="send">
 			</div>
 		</div>
@@ -173,7 +175,7 @@
 				</div>
 				<div class="ten columns">
 					<h6>Adress</h6>
-					<p>Orlando, Florida 34116 Lee Lan Dr</p>
+					<p>6110 Lee Lan Drive, Orlando, Florida, 32809.</p>
 				</div>
 			</div>
 			<div class="contact-section row">
@@ -183,6 +185,7 @@
 				<div class="ten columns">
 					<h6>Phone</h6>
 					<p>239/200/2373</p>
+					<p>407/229/8837</p>
 				</div>
 			</div>
 			<div class="contact-section row">
@@ -191,7 +194,8 @@
 				</div>
 				<div class="ten columns">
 					<h6>Email</h6>
-					<p>djjean85@gmail.com</p>
+					<p>mystichosts@gmail.com</p>
+					<p>mysticsupport@gmail.com</p>
 				</div>
 			</div>
 		</div>
@@ -205,27 +209,27 @@
 	<div class="container">
 		<div class="nine columns">
 			<ul>
-				<a href=""><li>Home</li></a>
-				<a href=""><li>About</li></a>
-				<a href=""><li>Services</li></a>
-				<a href=""><li>Portfolio</li></a>
-				<a href=""><li>Contact</li></a>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
-			<p>Website Developed by Jean Villalobos&copy</p>
+			<p>Website Developed by Jean Villalobos&copy;</p>
 		</div>
 		<div class="three columns social">
-		<span class="fa-stack fa-lg">
+		<a href=""><span class="fa-stack fa-lg">
 		  <i class="fa fa-circle fa-stack-2x"></i>
 		  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-		</span>
-		<span class="fa-stack fa-lg">
+		</span></a>
+		<a href=""><span class="fa-stack fa-lg">
 		  <i class="fa fa-circle fa-stack-2x"></i>
 		  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-		</span>
-		<span class="fa-stack fa-lg">
+		</span></a>
+		<a href=""><span class="fa-stack fa-lg">
 		  <i class="fa fa-circle fa-stack-2x"></i>
 		  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-		</span>
+		</span></a>
 		</div>
 	</div>
 </footer>
